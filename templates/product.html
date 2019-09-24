@@ -1,0 +1,33 @@
+<HTML>
+  <HEAD>
+    <TITLE>Product {{ product.id }}</TITLE>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+  </HEAD>
+  <BODY>
+    <div class="container">
+    <H2>{{product.name}}</H2>
+    <H4>by {{product.brand}}</H4>
+    <table width="100%" border="0" cellpadding="15">
+      <tr>
+        <td rowspan="3"><img src="images/{{product.id}}.jpg"></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>{{ product.description }}</td>
+      </tr>
+      <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>
+          <b>List price</b>:  <strikethrough>{{product.list_price}}</strikethrough><br>
+          <b>Our price</b>:    {{product.sale_price}}<br>
+          <b>You save</b>:  {{product.get_savings_pct()}}%!
+        </td>
+      </tr>
+    </table>
+    </div>
+  </BODY>
+</HTML>
+
+

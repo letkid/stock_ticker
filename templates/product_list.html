@@ -1,0 +1,22 @@
+<HTML>
+  <HEAD>
+    <TITLE>Product List</TITLE>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap/css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+  </HEAD>
+  <BODY>
+    <div class="container">
+        <table class="table">
+            {% for product in product_list %}
+              <tr>
+                <td><A HREF="{{ url_for('view_product', product_id=product.id) }}">{{product.id}}</A></td>
+                <td>{{ product.name }}</td>
+              </tr>
+            {% endfor %}
+        </table>
+    </div>
+  </BODY>
+</HTML>

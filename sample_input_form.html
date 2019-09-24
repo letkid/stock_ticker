@@ -1,0 +1,28 @@
+<HTML>
+  <HEAD><TITLE>Test Form</TITLE></HEAD>
+  <BODY>
+    <H1>Submit Form</H1>
+    <FORM action="http://127.0.0.1:5000/hello">
+    <!-- flask example
+        <FORM action="http://127.0.0.1:5000/greet_template">
+    -->
+      <TABLE>
+        <TR>
+          <TD><B>Name</B></TD>
+          <TD><INPUT NAME="person_name"></TD>
+        </TR>
+        <TR>
+          <TD><B>Occupation</B></TD>
+          <TD><SELECT NAME="occupation">
+                <OPTION VALUE="nurse">nurse
+                <OPTION VALUE="firefighter">firefighter
+                <OPTION VALUE="astronaut">astronaut
+              </SELECT></TD>
+        </TR>
+        <TR>
+          <TD colspan="2"><INPUT TYPE="submit"></TD>
+        </TR>
+      </TABLE>
+    </FORM>
+  </BODY>
+</HTML>

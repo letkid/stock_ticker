@@ -1,0 +1,61 @@
+<HTML>
+  <HEAD>
+    <TITLE>Stock Ticker Request Form</TITLE>
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+  </HEAD>
+  <BODY>
+    <div class="container">
+
+      <H1>Stock Ticker Request Form</H1>
+      Please enter a stock ticker to see its current price.<BR><BR>
+
+      <FORM action="http://127.0.0.1:8000/chart">
+        <div class="form-group">
+          <label for="ticker"><B>Ticker:</B></label>
+          <input type="text" size="5" name="ticker" class="form-control" id="ticker"><br>
+          <label for="exampleFormControlSelect1">Interval</label>
+            <select class="form-control" name="interval" id="exampleFormControlSelect1">
+              <option>1min</option>
+              <option selected>5min</option>
+              <option>15min</option>
+              <option>30min</option>
+              <option>60min</option>
+            </select>
+        <br>
+        <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </FORM>
+    </div>
+  </BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

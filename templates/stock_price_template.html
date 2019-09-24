@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>{{ obj.ticker }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap/css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>{{ obj.ticker }}</h1>
+      <h2>{{ obj.current_price }}</h2>
+      <img src="{{ url_for('static', filename=image_path) }}">
+      <p>Volume:  {{ obj.volume }}</p>
+      <p>Last updated:  {{ obj.last_updated }}</p>
+    </div>
+  </body>
+</html>
+
